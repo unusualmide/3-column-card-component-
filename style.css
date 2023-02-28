@@ -1,0 +1,140 @@
+/* CSS RESET */
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  min-width: 100%;
+  height: auto;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin-block-start: 90px;
+}
+
+.first-box {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+  width: 210px;
+  height: 405px;
+  padding: 2rem 2.5rem 1.5rem;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.second-box {
+  border: none;
+  width: 210px;
+  height: 405px;
+  padding: 2rem 2.5rem 1.5rem;
+  background-color: hsl(184, 100%, 22%);
+  box-shadow: inset 2px 2px 10px rgba(224, 222, 222, 0.048);
+}
+
+.third-box {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+  width: 210px;
+  height: 405px;
+  padding: 2rem 2.5rem 1.5rem;
+  background-color: hsl(179, 100%, 13%);
+}
+
+#orange {
+  color: hsl(31, 77%, 52%);
+  margin-top: 45%;
+  margin-bottom: auto;
+}
+
+#cyan {
+  color: hsl(184, 100%, 22%);
+  margin-top: 38%;
+  margin-bottom: auto;
+}
+
+#dark-cyan {
+  color: hsl(179, 100%, 13%);
+  margin-top: 49%;
+  margin-bottom: auto;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(242, 242, 242, 0.726);
+  line-height: 24px;
+  white-space: wrap;
+  overflow: auto;
+}
+
+button {
+  border: 1px solid white;
+  border-radius: 21px;
+  padding: 7% 15% 7%;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#orange:is(:hover, :active) {
+  border: 2px solid white;
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+
+#cyan:is(:hover, :active) {
+  border: 2px solid white;
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+
+#dark-cyan:is(:hover, :active) {
+  border: 2px solid white;
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* MOBILE DEVICE */
+
+@media screen and (max-width: 576px) {
+  body {
+    scroll-behavior: smooth;
+    margin-bottom: 4rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-box {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .third-box {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
